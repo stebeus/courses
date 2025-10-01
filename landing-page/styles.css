@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid #ffc3c3
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+header,
+footer {
+  height: 3rem;
+  padding: 1rem;
+  background-color: #000;
+}
+
+header ul,
+footer ul,
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  /* The attributes below protect from different framework global changes */
+  margin: 0;
+  padding: 0;
+}
+
+header a,
+footer a {
+  color: #fff;
+}
+
+header a:hover,
+footer a:hover {
+  color: rgb(255, 243, 243);
+}
+
+/* || Header */
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* || Main */
+
+main {
+  width: 65%;
+  margin: 25px auto;
+  padding: 1rem;
+}
+
+.sct-lead,
+.container-info,
+.sct-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.img.lead,
+.container-info {
+  text-align: center;
+}
+
+.container {
+  flex-basis: 35%;
+}
+
+.info {
+  flex-basis: 150px;
+}
+
+.img.info {
+  height: 150px;
+  width: 150px;
+  align-content: center;
+}
+
+.author-quote {
+  width: 175px;
+  margin-left: auto;
+}
+
+/* || Footer */
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  color: #fff;
+}
